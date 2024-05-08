@@ -15,4 +15,4 @@ file(GLOB SOURCE_FILES "*.h" "*.cpp" ${IMGUI_ADDITIONAL_SOURCE_FILES})
 
 add_library(imgui ${SOURCE_FILES})
 
-target_include_directories(imgui PUBLIC .)
+target_include_directories(imgui PUBLIC . ${IMGUI_ADDITIONAL_INCLUDE_DIRS})
